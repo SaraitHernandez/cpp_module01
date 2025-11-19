@@ -1,0 +1,40 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sarherna <sarherna@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/18 10:00:00 by sarherna          #+#    #+#             */
+/*   Updated: 2025/11/18 10:00:00 by sarherna         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "Harl.hpp"
+
+int main() {
+	Harl harl;
+	
+	std::cout << "Testing DEBUG level:" << std::endl;
+	harl.complain("DEBUG");
+	std::cout << std::endl;
+	
+	std::cout << "Testing INFO level:" << std::endl;
+	harl.complain("INFO");
+	std::cout << std::endl;
+	
+	std::cout << "Testing WARNING level:" << std::endl;
+	harl.complain("WARNING");
+	std::cout << std::endl;
+	
+	std::cout << "Testing ERROR level:" << std::endl;
+	harl.complain("ERROR");
+	std::cout << std::endl;
+	
+	std::cout << "Testing unknown level:" << std::endl;
+	harl.complain("UNKNOWN");
+	
+	return 0;
+}
+
+
